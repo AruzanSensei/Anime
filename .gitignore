@@ -1,6 +1,12 @@
 .DS_Store
 *.log
-.vscode/
-.idea/
+.vscnode_modules/
 .env
-node_modules
+*.log
+.DS_Store
+
+# Frontend files in root are for GitHub Pages - DO NOT IGNORE
+# index.html
+# styles.css
+# app.js
+# config.jsdules
