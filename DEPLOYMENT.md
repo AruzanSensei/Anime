@@ -32,7 +32,18 @@ Panduan lengkap untuk deploy Anime Downloader Web ke Railway (backend) dan GitHu
 5. Pilih repository `anime-downloader-web`
 6. Railway akan otomatis detect Node.js project
 
-### Step 3: Konfigurasi Backend
+### Step 3: Konfigurasi Service
+
+1. Klik service yang baru dibuat
+2. Pergi ke tab **Settings**
+3. Cari bagian **General** > **Root Directory**
+4. Ubah valuenya menjadi: `/backend`  **(PENTING! Jangan lewatkan ini)**
+   - *Ini memberi tahu Railway bahwa kode server kita ada di dalam folder backend*
+5. Scroll ke bawah ke bagian **Build**
+6. Pastikan **Build Command** kosong (atau `npm install`)
+7. Pastikan **Start Command** adalah: `npm start`
+
+### Step 4: Konfigurasi Environment Variables
 
 1. Setelah deploy, klik project yang baru dibuat
 2. Klik tab **"Variables"**
@@ -42,7 +53,7 @@ Panduan lengkap untuk deploy Anime Downloader Web ke Railway (backend) dan GitHu
 4. Klik **"Settings"** → **"Generate Domain"**
 5. Copy URL yang diberikan (contoh: `https://anime-downloader-production.up.railway.app`)
 
-### Step 4: Test Backend
+### Step 5: Test Backend
 
 Buka di browser:
 ```
